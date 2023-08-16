@@ -1,0 +1,18 @@
+.customBtn-selected,
+.selector-button-primary {
+  --bg-opacity: 1;
+  background-color: #0b1d26 !important;
+}
+.submit-bar {
+  background-color: #0b1d26 !important;
+}
+.radio-btn-checkmark::after {
+    background-color: #0b1d26 !important;
+
+}
+.body-container {
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.photographyblog.com%2Fpreviews%2Fkodak_pixpro_fz201_photos&psig=AOvVaw35-fBt6stUegma3OdKuXvp&ust=1692278888698000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiu86Ck4YADFQAAAAAdAAAAABAE) !important;
+}
+.bannerLogo {
+    background: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.photographyblog.com%2Fpreviews%2Fkodak_pixpro_fz201_photos&psig=AOvVaw35-fBt6stUegma3OdKuXvp&ust=1692278888698000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCKiu86Ck4YADFQAAAAAdAAAAABAE) !important;
+}
