@@ -5,13 +5,13 @@
   "description": "Starter project for an ES6 RESTful Express API",
   "main": "dist",
   "scripts": {
-    "dev": " cross-env NODE_ENV=development nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
-    "build": "babel src -s -D -d dist --presets es2015,stage-0",
-    "start": "cross-env NODE_ENV=production node dist",
+    "dev": "node init &&  cross-env NODE_ENV=development nodemon -w src --exec \"babel-node src --presets es2015,stage-0\"",
+    "build": "node init && babel src -s -D -d dist --presets es2015,stage-0",
+    "start": "node init && cross-env NODE_ENV=production node dist",
     "prestart": "npm run -s build",
     "test": "eslint src",
-    "dev:migrate-up": "db-migrate up --config config/database.json -e dev",
-    "dev:migrate-down": "db-migrate down --config config/database.json -e dev",
+    "dev:migrate-up": "node init && db-migrate up --config config/database.json -e dev",
+    "dev:migrate-down": "node init && db-migrate down --config config/database.json -e dev",
     "prod:migrate-up": "db-migrate up --config config/database.json -e prod",
     "prod:migrate-down": "db-migrate down --config config/database.json -e prod",
     "prod:start": "cross-env NODE_ENV=production node dist"

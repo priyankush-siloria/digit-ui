@@ -16,8 +16,8 @@
     "xstate": "^4.13.0"
   },
   "scripts": {
-    "start": "react-app-rewired start",
-    "build": "react-scripts build",
+    "start": "node init && react-app-rewired start",
+    "build": "node init && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },

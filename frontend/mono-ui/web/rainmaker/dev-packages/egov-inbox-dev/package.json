@@ -3,23 +3,23 @@
   "version": "0.1.2",
   "private": false,
   "proxy": "https://qa.digit.org/",
-  "licence":"MIT",
+  "licence": "MIT",
   "dependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3"
   },
   "scripts": {
-    "start": "set PORT=3004 && react-scripts start",
-    "build": "react-scripts build",
+    "start": "node init && set PORT=3004 && react-scripts start",
+    "build": "node init && react-scripts build",
     "compile": "babel src -d lib",
-    "new":"cd src && yarn version-patch && cd .. && yarn lib && yarn --pub",
+    "new": "cd src && yarn version-patch && cd .. && yarn lib && yarn --pub",
     "lib": "babel src --out-dir lib/react-tour  --copy-files",
-    "package-publish":"cd lib/react-tour && npm publish",
+    "package-publish": "cd lib/react-tour && npm publish",
     "compile-publish": "yarn lib &&  cd lib/react-tour && yarn version-patch",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "--pub":"yarn package-publish"
+    "--pub": "yarn package-publish"
   },
   "devDependencies": {
     "@babel/polyfill": "^7.12.1",

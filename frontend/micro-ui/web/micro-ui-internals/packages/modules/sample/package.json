@@ -9,8 +9,8 @@
     "dist"
   ],
   "scripts": {
-    "start": "microbundle-crl watch --no-compress --format modern,cjs",
-    "build": "microbundle-crl --compress --no-sourcemap --format cjs",
+    "start": "node init && microbundle-crl watch --no-compress --format modern,cjs",
+    "build": "node init && microbundle-crl --compress --no-sourcemap --format cjs",
     "prepublish": "yarn build"
   },
   "peerDependencies": {

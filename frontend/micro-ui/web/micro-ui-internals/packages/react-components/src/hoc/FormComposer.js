@@ -563,9 +563,7 @@ export const FormComposer = (props) => {
   const renderFormFields = (props, section, index, array, sectionFormCategory) => (
     <React.Fragment key={index}>
       {!props.childrenAtTheBottom && (
-        <div className="bannerHeader">
-          <AppIcon /><p style={{ borderLeft: "2px solid #000", padding: "8px" }}>State Demo</p>
-        </div>
+          <AppIcon />
       )}
       {/* {!props.childrenAtTheBottom && props.children} */}
       {props.heading && <CardSubHeader style={{ ...props.headingStyle }}> {props.heading} </CardSubHeader>}
